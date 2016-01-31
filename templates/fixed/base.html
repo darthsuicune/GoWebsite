@@ -1,0 +1,14 @@
+{{ define "base" }}
+<html>
+<head>
+	<link rel="stylesheet" style="text/css" href="res/css.css" />
+	<title>{{ template "title" . }}</title>
+	{{template "head" .}}
+</head>
+<body>
+	{{ template "content" . }}
+<footer>
+</footer>
+</body>
+</html>
+{{ end }}

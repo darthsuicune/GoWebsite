@@ -9,7 +9,7 @@ const EXTENSION = ".txt"
 
 type Page struct {
 	Title string
-	Body []byte
+	Body  []byte
 }
 
 func (p *Page) save() error {
@@ -23,7 +23,7 @@ func loadPage(title string) (*Page, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &Page{Title: title, Body: body}, nil;
+	return &Page{Title: title, Body: body}, nil
 }
 
 /*func main() {
